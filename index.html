@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta name="viewport" content="width-device=width, initial-scale=1.0">
+        <title>GTA Rockstar - Best Selling Game</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+<body>
+    <div class = "container">
+        <div class ="navbar">
+            <img src="images/logo.png" class="logo">
+            <nav>
+                 <ul id="menuList">
+                    <li><a href="">History</a></li>
+                    <li><a href="">History 1</a></li>
+                    <li><a href="">History 2</a></li>
+                    <li><a href="">History 3</a></li>
+                 </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+        <div class="row">
+            <div class = "col-1">
+                <h2>Grand Theft Auto 5</h2>
+                <h3>"You Forget A Thousand Things Every Day, Pal. Make Sure This Is One Of 'Em".</h3>
+                <p>Released on September 17, 2013</p>
+                <h4>Clearance sale - $20!</h4>
+             <button type="button">Buy Now<img src="images/arrow.png"></button>
+            </div>
+            <div class = "col-2">
+                <img src="images/gta.png" class="controller">
+                <div class="color-box"></div>
+                    <div class="add-btn">
+                        <img src="images/add.png" class="rating">
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+            if(menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "130px"
+            } else {
+                menuList.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+</body>
+</html>
